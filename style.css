@@ -215,7 +215,7 @@ body._touch .menu__list > li._active .menu__arrow {
         position: absolute;
         height: 10%;
         width: 100%;
-        transform: all 0.3s ease 0s;
+        transition: all 0.3s ease 0s;
         background-color: #fff;
     }
     .menu__icon::before,
@@ -239,7 +239,7 @@ body._touch .menu__list > li._active .menu__arrow {
         top: 50%;
         transform: rotate(-45deg) translate(0px, -50%);
     }
-    .menu__icon._active::before {
+    .menu__icon._active::after {
         bottom: 50%;
         transform: rotate(45deg) translate(0px, 50%);
     }
